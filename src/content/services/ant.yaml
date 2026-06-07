@@ -1,0 +1,21 @@
+order: 1
+name: 'Ant Control'
+img: '/img/photo-ant.jpg'
+short: 'Ants, indoor & out'
+desc: 'Eliminate colonies at the source and seal entry points to stop ants for good.'
+icon: '<circle cx="12" cy="6" r="2"/><circle cx="12" cy="12" r="2.5"/><circle cx="12" cy="18" r="2"/><path d="M10 6 6 4M14 6l4-2M9.5 12 5 11M14.5 12 19 11M10 18l-4 2M14 18l4 2"/>'
+tagline: 'Stop the trail at its source — colony elimination that actually lasts.'
+long: "Ants march indoors in search of food and water, laying scent trails that bring the entire colony with them. We don’t just treat the ants you see — we track activity back to the nest, eliminate the colony, and seal the entry points so they can’t return."
+signs:
+  - 'Visible trails along baseboards or counters'
+  - 'Small piles of dirt or fine wood shavings'
+  - 'Activity around food, sinks, and pet bowls'
+treatment:
+  - 'Inspection to locate trails and nests'
+  - 'Targeted bait the ants carry back to the colony'
+  - 'Exterior barrier + entry-point sealing'
+benefits:
+  - 'Colony-level elimination'
+  - 'Pet- & family-safe products'
+  - 'Interior + exterior coverage'
+  - 'Guaranteed re-treatment'

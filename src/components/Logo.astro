@@ -1,0 +1,23 @@
+---
+import { SITE } from '../data/site';
+
+interface Props {
+  dark?: boolean;
+}
+const { dark = true } = Astro.props;
+
+// Split the site name into the bold "mark" (first word) and the
+// tracked sub-label (the rest), e.g. "Hero Pest Control" -> "HERO" + "PEST CONTROL".
+const words = SITE.name.trim().split(/\s+/);
+const mark = (words[0] ?? '').toUpperCase();
+const sub = words.slice(1).join(' ').toUpperCase();
+---
+<a href="/" class="flex items-center gap-2.5" aria-label={`${SITE.name} home`}>
+  <span class="grid h-11 w-11 place-items-center rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 text-white shadow-lift">
+    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5l-8-3Z"></path></svg>
+  </span>
+  <span class="leading-none">
+    <span class:list={['block font-display text-xl font-extrabold tracking-tight', { 'text-white': !dark }]}>{mark}</span>
+    {sub && <span class:list={['block text-[10px] font-bold tracking-[0.22em]', dark ? 'text-brand-700' : 'text-brand-400']}>{sub}</span>}
+  </span>
+</a>

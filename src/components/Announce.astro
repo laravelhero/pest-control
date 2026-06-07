@@ -1,0 +1,21 @@
+---
+import { SITE } from '../data/site';
+---
+<div class="relative z-40 bg-gradient-to-r from-brand-700 via-brand-600 to-brand-700 text-white">
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2 text-xs font-semibold sm:text-sm">
+    <p class="flex items-center gap-2">
+      <span class="relative flex h-2.5 w-2.5">
+        <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent-400 opacity-75"></span>
+        <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-accent-500"></span>
+      </span>
+      <span class="hidden sm:inline">24/7 Emergency Pest Service Available</span>
+      <span class="sm:hidden">24/7 Emergency Service</span>
+    </p>
+    <div class="flex items-center gap-4">
+      <a href={SITE.phoneHref} class="flex items-center gap-1.5 transition hover:text-accent-400">
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"></path></svg>{SITE.phone}
+      </a>
+      <a href="/contact" class="hidden items-center gap-1.5 rounded-full bg-white/15 px-3 py-1 backdrop-blur-sm transition hover:bg-white/25 md:flex">🛡️ Free Inspection</a>
+    </div>
+  </div>
+</div>

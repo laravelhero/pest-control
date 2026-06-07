@@ -1,0 +1,21 @@
+order: 6
+name: 'Bed Bug Control'
+img: '/img/photo-bedbug.jpg'
+short: 'Heat & treatment'
+desc: 'Discreet, thorough heat and residual treatments that eradicate bed bugs fast.'
+icon: '<rect x="4" y="8" width="16" height="10" rx="3"/><path d="M4 13h16M8 8V6a4 4 0 0 1 8 0v2"/>'
+tagline: 'Discreet, thorough treatment that ends the infestation.'
+long: 'Bed bugs hide in seams and crevices and spread fast from room to room. Our combined heat and residual treatment reaches every hiding place to eradicate bed bugs at every life stage — guaranteed.'
+signs:
+  - 'Rusty spots on sheets or mattress seams'
+  - 'Itchy bites in lines or clusters'
+  - 'A sweet, musty odor in the room'
+treatment:
+  - 'Detailed inspection of beds and furniture'
+  - 'Heat treatment + targeted residual application'
+  - 'Follow-up verification visit'
+benefits:
+  - 'Kills all life stages'
+  - 'Discreet service'
+  - 'Heat-based, low-chemical'
+  - 'Treatment guarantee'

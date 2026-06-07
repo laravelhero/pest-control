@@ -1,0 +1,21 @@
+order: 4
+name: 'Mosquito Control'
+img: '/img/photo-mosquito.jpg'
+short: 'Yard & perimeter'
+desc: 'Reclaim your yard with seasonal misting programs that slash mosquito activity.'
+icon: '<circle cx="12" cy="12" r="2.5"/><path d="M12 9.5V5M9.6 10 5 6M14.4 10 19 6M9.6 14 4 17M14.4 14 20 17"/>'
+tagline: 'Reclaim your yard with proven, season-long protection.'
+long: 'Mosquitoes breed in standing water and can transmit disease, making your outdoor space unusable. Our recurring program treats resting and breeding areas around your property to dramatically reduce the population all season long.'
+signs:
+  - 'Biting at dawn and dusk'
+  - 'Larvae in standing water'
+  - 'Swarms in shaded, damp areas'
+treatment:
+  - 'Property inspection for breeding sites'
+  - 'Targeted perimeter misting'
+  - 'Breeding-source treatment + special-event options'
+benefits:
+  - 'Season-long reduction'
+  - 'Backyard & event coverage'
+  - 'Family- & pet-conscious'
+  - 'Flexible scheduling'

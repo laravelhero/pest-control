@@ -1,0 +1,21 @@
+order: 3
+name: 'Rodent Control'
+img: '/img/photo-rodent.jpg'
+short: 'Mice & rats'
+desc: 'Humane trapping, exclusion, and prevention so rodents never come back.'
+icon: '<circle cx="9" cy="12" r="5"/><circle cx="6" cy="8" r="2"/><circle cx="12" cy="8" r="2"/><path d="M14 13c4 0 6 1 6 3M6 12h.01"/>'
+tagline: 'Humane removal and whole-home exclusion — so they never come back.'
+long: 'Mice and rats gnaw wiring, contaminate food, and nest quickly out of sight. We remove the current population humanely, seal every possible entry point, and sanitize affected areas to protect your home and family.'
+signs:
+  - 'Gnaw marks and droppings'
+  - 'Scratching or scurrying inside walls'
+  - 'Shredded nesting material'
+treatment:
+  - 'Full interior & exterior inspection'
+  - 'Humane trapping and removal'
+  - 'Entry-point sealing + sanitation'
+benefits:
+  - 'Whole-home exclusion'
+  - 'Humane methods'
+  - 'Protects wiring & insulation'
+  - 'Prevention guarantee'

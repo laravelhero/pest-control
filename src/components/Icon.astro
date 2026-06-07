@@ -1,0 +1,18 @@
+---
+/** Renders the standard 24×24 stroked icon used across cards and lists. */
+interface Props {
+  paths: string;
+  class?: string;
+}
+const { paths, class: cls = 'h-7 w-7' } = Astro.props;
+---
+<svg
+  class={cls}
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.7"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  set:html={paths}
+></svg>

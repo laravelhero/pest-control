@@ -1,0 +1,21 @@
+order: 2
+name: 'Cockroach Control'
+img: '/img/photo-cockroach.jpg'
+short: 'Roaches & germs'
+desc: 'Targeted gel + barrier treatments that wipe out roaches and keep them away.'
+icon: '<ellipse cx="12" cy="13" rx="5" ry="7"/><path d="M12 6V3M9 4 7 2M15 4l2-2M7 11 3 9M17 11l4-2M7 16l-4 2M17 16l4 2"/>'
+tagline: 'Eliminate roaches — and the germs and allergens they carry.'
+long: 'Cockroaches breed fast and spread bacteria and asthma triggers throughout your home. Our gel-bait and barrier program targets roaches where they hide and reproduce, breaking the cycle and keeping them out for good.'
+signs:
+  - 'Droppings that look like coffee grounds'
+  - 'A musty, oily odor'
+  - 'Egg cases behind appliances or in cabinets'
+treatment:
+  - 'Inspection of harborage and moisture zones'
+  - 'Precision gel baiting + crack-and-crevice treatment'
+  - 'Sanitation guidance and follow-up monitoring'
+benefits:
+  - 'Targets breeding sites'
+  - 'Reduces allergens & germs'
+  - 'Discreet, low-odor application'
+  - 'Ongoing prevention'

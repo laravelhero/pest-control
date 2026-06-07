@@ -1,0 +1,21 @@
+order: 5
+name: 'Termite Control'
+img: '/img/photo-termite.jpg'
+short: 'Wood-destroying pests'
+desc: 'Protect your biggest investment with advanced termite detection and defense.'
+icon: '<ellipse cx="12" cy="13" rx="4" ry="6"/><circle cx="12" cy="5" r="2"/><path d="M9 10 5 9M15 10l4-1M9 13H4M15 13h5M9 16l-4 1M15 16l4 1"/>'
+tagline: 'Protect your biggest investment from silent, costly damage.'
+long: 'Termites consume wood from the inside out, causing serious structural damage long before you notice. We detect activity early and install advanced liquid and bait-station barriers, backed by a renewable warranty.'
+signs:
+  - 'Mud tubes on foundations or walls'
+  - 'Hollow-sounding or blistering wood'
+  - 'Discarded wings near windows and doors'
+treatment:
+  - 'Comprehensive termite inspection'
+  - 'Liquid barrier + in-ground bait stations'
+  - 'Ongoing monitoring and annual warranty'
+benefits:
+  - 'Early detection'
+  - 'Structural protection'
+  - 'Renewable warranty'
+  - 'Advanced bait + barrier'

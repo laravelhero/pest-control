@@ -1,0 +1,38 @@
+---
+interface Crumb {
+  label: string;
+  href?: string;
+}
+interface Props {
+  eyebrow: string;
+  title: string;
+  subtitle?: string;
+  crumbs?: Crumb[];
+}
+const { eyebrow, title, subtitle, crumbs = [] } = Astro.props;
+---
+<section class="relative overflow-hidden bg-ink py-20 text-white">
+  <div class="absolute inset-0 ph"></div>
+  <div class="absolute inset-0 bg-dots opacity-30"></div>
+  <div class="relative mx-auto max-w-7xl px-4 text-center">
+    <p class="text-sm font-bold uppercase tracking-[0.2em] text-brand-400">{eyebrow}</p>
+    <h1 class="mt-2 font-display text-5xl font-extrabold tracking-tight">{title}</h1>
+    {subtitle && <p class="mx-auto mt-4 max-w-xl text-lg text-white/70">{subtitle}</p>}
+    {
+      crumbs.length > 0 && (
+        <nav class="mt-6 flex justify-center gap-2 text-sm text-white/60" aria-label="Breadcrumb">
+          {crumbs.map((c, i) => (
+            <>
+              {c.href ? (
+                <a href={c.href} class="hover:text-white">{c.label}</a>
+              ) : (
+                <span class="text-white">{c.label}</span>
+              )}
+              {i < crumbs.length - 1 && <span>/</span>}
+            </>
+          ))}
+        </nav>
+      )
+    }
+  </div>
+</section>

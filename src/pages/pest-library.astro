@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHeader from '../components/PageHeader.astro';
+import Cta from '../components/Cta.astro';
+import { pests } from '../data/site';
+---
+<BaseLayout
+  title="Pest Library — Hero Pest Control | Know Your Pest"
+  description="Spot the warning signs early. Learn the signs of common household pests and how to keep them out."
+>
+  <PageHeader
+    eyebrow="Pest Library"
+    title="Know Your Pest"
+    subtitle="Spot the warning signs early. Tap any pest to learn the signs and how to keep them out."
+    crumbs={[{ label: 'Home', href: '/' }, { label: 'Pest Library' }]}
+  />
+
+  <!-- ===== PEST GRID ===== -->
+  <section class="bg-mist py-20">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {
+          pests.map((p, i) => (
+            <div class="reveal" x-intersect.once="$el.classList.add('shown')" style={`transition-delay:${(i % 3) * 80}ms`}>
+              <article x-data="{ open:false }" class="flex h-full flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-soft">
+                <div class="relative h-44 overflow-hidden">
+                  <img src={p.img} alt={p.name} loading="lazy" class="h-full w-full object-cover" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent" />
+                  <div class="absolute bottom-3 left-4 right-4 flex items-end justify-between">
+                    <h2 class="font-display text-2xl font-extrabold text-white">{p.name}</h2>
+                    <span class="rounded-full bg-accent-500 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-white">{p.risk}</span>
+                  </div>
+                </div>
+                <div class="flex flex-1 flex-col p-6">
+                  <p class="text-sm leading-relaxed text-slate-500">{p.about}</p>
+
+                  <div x-show="open" x-collapse>
+                    <div class="mt-5 grid gap-4 sm:grid-cols-2">
+                      <div>
+                        <h3 class="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-700"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg> Warning Signs</h3>
+                        <ul class="mt-2 space-y-1.5">
+                          {p.signs.map((s) => <li class="flex gap-2 text-sm text-slate-600"><span class="text-accent-500">•</span><span>{s}</span></li>)}
+                        </ul>
+                      </div>
+                      <div>
+                        <h3 class="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-brand-700"><svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path></svg> Prevention</h3>
+                        <ul class="mt-2 space-y-1.5">
+                          {p.prevent.map((v) => <li class="flex gap-2 text-sm text-slate-600"><span class="text-brand-600">✓</span><span>{v}</span></li>)}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mt-auto flex items-center justify-between pt-5">
+                    <button @click="open=!open" class="inline-flex items-center gap-1.5 text-sm font-bold text-brand-700" :aria-expanded="open">
+                      <span x-text="open ? 'Show less' : 'Signs & prevention'">Signs &amp; prevention</span>
+                      <svg class="h-4 w-4 transition" :class="open && 'rotate-180'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg>
+                    </button>
+                    <a href="/contact" class="rounded-full bg-brand-50 px-4 py-2 text-xs font-bold text-brand-700 transition hover:bg-brand-600 hover:text-white">Get Help</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <Cta title="Spotted one of these in your home?" text="Don’t wait — early action saves time and money." cta="Get a Free Inspection" />
+</BaseLayout>

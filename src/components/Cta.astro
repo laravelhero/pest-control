@@ -1,0 +1,18 @@
+---
+interface Props {
+  title: string;
+  text: string;
+  cta?: string;
+  href?: string;
+}
+const { title, text, cta = 'Get a Free Quote', href = '/contact' } = Astro.props;
+---
+<section class="bg-gradient-to-br from-brand-600 to-brand-800 py-16 text-white">
+  <div class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-6 px-4 text-center sm:flex-row sm:text-left">
+    <div>
+      <h2 class="font-display text-3xl font-extrabold">{title}</h2>
+      <p class="mt-1 text-white/80">{text}</p>
+    </div>
+    <a href={href} class="shrink-0 rounded-full bg-white px-7 py-3.5 font-bold text-brand-700 shadow-lift transition hover:bg-brand-50">{cta}</a>
+  </div>
+</section>

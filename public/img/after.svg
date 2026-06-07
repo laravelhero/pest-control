@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Kitchen corner after pest treatment">
+  <defs>
+    <linearGradient id="a-wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e9f7ee"/>
+    </linearGradient>
+    <linearGradient id="a-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e4efe7"/>
+      <stop offset="1" stop-color="#cfe3d5"/>
+    </linearGradient>
+    <linearGradient id="a-sun" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="a-glow" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#bdeccd" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#bdeccd" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- wall -->
+  <rect width="800" height="312" fill="url(#a-wall)"/>
+  <!-- floor -->
+  <rect y="312" width="800" height="138" fill="url(#a-floor)"/>
+
+  <!-- soft clean glow -->
+  <ellipse cx="400" cy="150" rx="320" ry="200" fill="url(#a-glow)"/>
+
+  <!-- floor tile lines (perspective) -->
+  <g stroke="#a9cbb4" stroke-width="2" opacity="0.7">
+    <line x1="0" y1="350" x2="800" y2="350"/>
+    <line x1="0" y1="398" x2="800" y2="398"/>
+    <line x1="120" y1="312" x2="40" y2="450"/>
+    <line x1="320" y1="312" x2="300" y2="450"/>
+    <line x1="520" y1="312" x2="560" y2="450"/>
+    <line x1="700" y1="312" x2="760" y2="450"/>
+  </g>
+  <!-- floor sheen -->
+  <polygon points="540,312 600,312 420,450 320,450" fill="#ffffff" opacity="0.28"/>
+
+  <!-- baseboard -->
+  <rect y="300" width="800" height="14" fill="#ffffff"/>
+  <rect y="311" width="800" height="3" fill="#cfe3d5"/>
+
+  <!-- window with sunlight -->
+  <g transform="translate(548 56)">
+    <rect width="180" height="150" rx="6" fill="#eef9f1" stroke="#cfe3d5" stroke-width="4"/>
+    <rect x="6" y="6" width="168" height="138" rx="3" fill="#dcf1e4"/>
+    <line x1="90" y1="6" x2="90" y2="144" stroke="#ffffff" stroke-width="6"/>
+    <line x1="6" y1="75" x2="174" y2="75" stroke="#ffffff" stroke-width="6"/>
+    <polygon points="14,14 70,14 36,140 14,140" fill="url(#a-sun)"/>
+  </g>
+
+  <!-- potted plant -->
+  <g transform="translate(96 232)">
+    <g fill="none" stroke="#16a34a" stroke-width="6" stroke-linecap="round">
+      <path d="M0 70 C-18 40 -26 14 -16 -10"/>
+      <path d="M0 70 C0 36 0 8 0 -22"/>
+      <path d="M0 70 C18 42 28 16 18 -6"/>
+    </g>
+    <g fill="#22c55e">
+      <ellipse cx="-18" cy="-12" rx="13" ry="7" transform="rotate(-38 -18 -12)"/>
+      <ellipse cx="0" cy="-26" rx="13" ry="7" transform="rotate(0 0 -26)"/>
+      <ellipse cx="19" cy="-8" rx="13" ry="7" transform="rotate(38 19 -8)"/>
+    </g>
+    <path d="M-22 70 h44 l-7 28 h-30 Z" fill="#3f8f57"/>
+    <rect x="-26" y="64" width="52" height="10" rx="3" fill="#4caa6a"/>
+  </g>
+
+  <!-- shield / clean badge -->
+  <g transform="translate(400 168)">
+    <circle r="58" fill="#16a34a"/>
+    <circle r="58" fill="none" stroke="#bdeccd" stroke-width="6" opacity="0.6"/>
+    <path d="M-24 2 l16 16 32 -38" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#16a34a">
+    <path d="M250 110 l6 14 14 6 -14 6 -6 14 -6-14 -14-6 14-6 Z"/>
+    <path d="M540 250 l5 12 12 5 -12 5 -5 12 -5-12 -12-5 12-5 Z" opacity="0.85"/>
+    <path d="M196 332 l4 10 10 4 -10 4 -4 10 -4-10 -10-4 10-4 Z" opacity="0.8"/>
+    <path d="M690 300 l4 10 10 4 -10 4 -4 10 -4-10 -10-4 10-4 Z" opacity="0.75"/>
+  </g>
+</svg>
