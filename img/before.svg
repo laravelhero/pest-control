@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Kitchen corner before pest treatment">
+  <defs>
+    <linearGradient id="b-wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfc7b8"/>
+      <stop offset="1" stop-color="#bdb4a2"/>
+    </linearGradient>
+    <linearGradient id="b-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a89a83"/>
+      <stop offset="1" stop-color="#8f8068"/>
+    </linearGradient>
+    <radialGradient id="b-stain" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#6b5a45" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#6b5a45" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b-vig" cx="0.5" cy="0.45" r="0.75">
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1c1813" stop-opacity="0.35"/>
+    </radialGradient>
+  </defs>
+
+  <!-- wall -->
+  <rect width="800" height="312" fill="url(#b-wall)"/>
+  <!-- floor -->
+  <rect y="312" width="800" height="138" fill="url(#b-floor)"/>
+
+  <!-- floor tile lines (perspective) -->
+  <g stroke="#6f6149" stroke-width="2" opacity="0.55">
+    <line x1="0" y1="350" x2="800" y2="350"/>
+    <line x1="0" y1="398" x2="800" y2="398"/>
+    <line x1="120" y1="312" x2="40" y2="450"/>
+    <line x1="320" y1="312" x2="300" y2="450"/>
+    <line x1="520" y1="312" x2="560" y2="450"/>
+    <line x1="700" y1="312" x2="760" y2="450"/>
+  </g>
+
+  <!-- baseboard -->
+  <rect y="300" width="800" height="14" fill="#9c8f76"/>
+  <rect y="300" width="800" height="3" fill="#7d7058"/>
+
+  <!-- grime along baseboard -->
+  <rect y="308" width="800" height="10" fill="#5a4d39" opacity="0.25"/>
+
+  <!-- water / damp stains on wall -->
+  <ellipse cx="610" cy="150" rx="150" ry="120" fill="url(#b-stain)"/>
+  <ellipse cx="150" cy="70" rx="120" ry="90" fill="url(#b-stain)"/>
+
+  <!-- wall crack -->
+  <path d="M470 0 l-8 50 14 30 -10 60 12 40 -6 70 10 56" fill="none" stroke="#5c513e" stroke-width="2.2" opacity="0.7"/>
+  <path d="M462 50 l-26 22M488 170 l24 14M476 256 l-22 16" fill="none" stroke="#5c513e" stroke-width="1.6" opacity="0.6"/>
+
+  <!-- mold patches near baseboard -->
+  <g fill="#4f4632" opacity="0.4">
+    <circle cx="60" cy="296" r="10"/><circle cx="78" cy="299" r="7"/><circle cx="46" cy="300" r="6"/>
+    <circle cx="724" cy="297" r="9"/><circle cx="742" cy="300" r="6"/>
+  </g>
+
+  <!-- cobweb top-left corner -->
+  <g stroke="#efeae0" stroke-width="1.4" fill="none" opacity="0.55">
+    <path d="M0 0 L120 90M0 40 L100 88M0 80 L92 96M40 0 L96 84M80 0 L108 78"/>
+    <path d="M22 18 Q60 30 64 70"/>
+    <path d="M44 18 Q78 40 80 78"/>
+    <path d="M16 40 Q52 56 58 88"/>
+  </g>
+
+  <!-- cockroach 1 -->
+  <g transform="translate(250 388) rotate(18)">
+    <g stroke="#2e251a" stroke-width="2" stroke-linecap="round">
+      <path d="M-2 0 l-22 -10M-2 4 l-26 2M-2 8 l-22 14M2 0 l22 -10M2 4 l26 2M2 8 l22 14"/>
+      <path d="M-6 -10 q-16 -10 -26 -4M6 -10 q16 -10 26 -4"/>
+    </g>
+    <ellipse cx="0" cy="2" rx="17" ry="10" fill="#4a3a26"/>
+    <ellipse cx="0" cy="-7" rx="10" ry="8" fill="#372a1a"/>
+    <line x1="-7" y1="2" x2="7" y2="2" stroke="#2c2014" stroke-width="1.4"/>
+  </g>
+
+  <!-- cockroach 2 -->
+  <g transform="translate(560 420) rotate(-12) scale(0.85)">
+    <g stroke="#2e251a" stroke-width="2" stroke-linecap="round">
+      <path d="M-2 0 l-22 -10M-2 4 l-26 2M-2 8 l-22 14M2 0 l22 -10M2 4 l26 2M2 8 l22 14"/>
+      <path d="M-6 -10 q-16 -10 -26 -4M6 -10 q16 -10 26 -4"/>
+    </g>
+    <ellipse cx="0" cy="2" rx="17" ry="10" fill="#4a3a26"/>
+    <ellipse cx="0" cy="-7" rx="10" ry="8" fill="#372a1a"/>
+    <line x1="-7" y1="2" x2="7" y2="2" stroke="#2c2014" stroke-width="1.4"/>
+  </g>
+
+  <!-- ant trail along baseboard -->
+  <g fill="#2b2118">
+    <g transform="translate(360 326) scale(0.6)">
+      <g stroke="#2b2118" stroke-width="2.4" stroke-linecap="round"><path d="M0 0 l-9 -7M0 2 l-11 1M0 4 l-9 8M0 0 l9 -7M0 2 l11 1M0 4 l9 8"/></g>
+      <circle cx="-8" cy="0" r="3.2"/><circle cx="0" cy="1" r="3.6"/><circle cx="9" cy="1" r="4.4"/>
+      <path d="M11 -2 l4 -5M12 0 l5 -3" stroke="#2b2118" stroke-width="1.6" fill="none"/>
+    </g>
+    <g transform="translate(410 330) scale(0.6)">
+      <g stroke="#2b2118" stroke-width="2.4" stroke-linecap="round"><path d="M0 0 l-9 -7M0 2 l-11 1M0 4 l-9 8M0 0 l9 -7M0 2 l11 1M0 4 l9 8"/></g>
+      <circle cx="-8" cy="0" r="3.2"/><circle cx="0" cy="1" r="3.6"/><circle cx="9" cy="1" r="4.4"/>
+      <path d="M11 -2 l4 -5M12 0 l5 -3" stroke="#2b2118" stroke-width="1.6" fill="none"/>
+    </g>
+    <g transform="translate(460 326) scale(0.6)">
+      <g stroke="#2b2118" stroke-width="2.4" stroke-linecap="round"><path d="M0 0 l-9 -7M0 2 l-11 1M0 4 l-9 8M0 0 l9 -7M0 2 l11 1M0 4 l9 8"/></g>
+      <circle cx="-8" cy="0" r="3.2"/><circle cx="0" cy="1" r="3.6"/><circle cx="9" cy="1" r="4.4"/>
+      <path d="M11 -2 l4 -5M12 0 l5 -3" stroke="#2b2118" stroke-width="1.6" fill="none"/>
+    </g>
+  </g>
+
+  <!-- dirt smudges on floor -->
+  <g fill="#5a4c37" opacity="0.3">
+    <ellipse cx="180" cy="420" rx="60" ry="14"/>
+    <ellipse cx="650" cy="360" rx="44" ry="11"/>
+  </g>
+
+  <rect width="800" height="450" fill="url(#b-vig)"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Rodent illustration">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#dcfce7"/><stop offset="1" stop-color="#f0fdf4"/></linearGradient>
+<radialGradient id="g" cx=".5" cy=".42" r=".55"><stop offset="0" stop-color="#16A34A" stop-opacity=".22"/><stop offset="1" stop-color="#16A34A" stop-opacity="0"/></radialGradient>
+<pattern id="d" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="#15803D" fill-opacity=".12"/></pattern>
+</defs>
+<rect width="800" height="600" fill="url(#bg)"/><rect width="800" height="600" fill="url(#d)"/><rect width="800" height="600" fill="url(#g)"/>
+<circle cx="400" cy="295" r="178" fill="#ffffff" fill-opacity=".7"/>
+<circle cx="400" cy="295" r="178" fill="none" stroke="#16A34A" stroke-opacity=".18" stroke-width="2"/>
+<g transform="translate(400 295) scale(13.5) translate(-12 -12)" fill="none" stroke="#15803D" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="5"/><circle cx="6" cy="8" r="2"/><circle cx="12" cy="8" r="2"/><path d="M14 13c4 0 6 1 6 3M6 12h.01"/></g>
+</svg>
