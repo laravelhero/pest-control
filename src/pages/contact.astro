@@ -28,6 +28,9 @@ const inputClass =
             <p class="mt-1 font-semibold text-brand-700">We typically respond within the hour.</p>
             <form x-data="quoteForm" @submit.prevent="submit()" class="mt-6 space-y-4" novalidate>
               <div x-show="sent" x-transition class="rounded-xl border border-brand-200 bg-brand-50 p-4 text-sm font-semibold text-brand-800">✅ Thanks! We’ve received your request and will call you shortly.</div>
+              <div x-show="error" x-transition x-text="error" class="rounded-xl border border-red-200 bg-red-50 p-4 text-sm font-semibold text-red-700"></div>
+              <!-- Honeypot: hidden from users, catches bots -->
+              <input type="checkbox" x-model="botcheck" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
               <div class="grid gap-4 sm:grid-cols-2">
                 <div>
                   <label for="name" class="sr-only">Full name</label>
@@ -53,7 +56,10 @@ const inputClass =
                 <label for="msg" class="sr-only">Tell us about your pest problem</label>
                 <textarea id="msg" x-model="f.msg" rows="4" placeholder="Tell us about your pest problem…" class={inputClass}></textarea>
               </div>
-              <button type="submit" class="w-full rounded-xl bg-gradient-to-r from-brand-600 to-brand-700 py-3.5 font-bold text-white shadow-lift transition hover:brightness-110">Submit Request</button>
+              <button type="submit" :disabled="sending" class="w-full rounded-xl bg-gradient-to-r from-brand-600 to-brand-700 py-3.5 font-bold text-white shadow-lift transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60">
+                <span x-show="!sending">Submit Request</span>
+                <span x-show="sending">Sending…</span>
+              </button>
               <p class="text-center text-xs text-slate-400">🔒 Your information is secure and never shared.</p>
             </form>
           </div>
